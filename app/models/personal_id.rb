@@ -1,0 +1,2 @@
+class PersonalId < ApplicationRecord
+end

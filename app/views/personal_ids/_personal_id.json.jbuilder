@@ -1,0 +1,2 @@
+json.extract! personal_id, :id, :name, :dob, :language, :phone_1, :phone_2, :email, :emer_contact_name, :emer_contact_no, :prim_phys_name, :prim_phys_no, :health_iss_name, :health_iss_no, :health_mem_id, :created_at, :updated_at
+json.url personal_id_url(personal_id, format: :json)

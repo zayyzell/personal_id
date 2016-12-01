@@ -1,0 +1,1 @@
+json.array! @personal_ids, partial: 'personal_ids/personal_id', as: :personal_id

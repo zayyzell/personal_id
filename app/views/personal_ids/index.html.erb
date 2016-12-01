@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Personal Ids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Dob</th>
+      <th>Language</th>
+      <th>Phone 1</th>
+      <th>Phone 2</th>
+      <th>Email</th>
+      <th>Emer contact name</th>
+      <th>Emer contact no</th>
+      <th>Prim phys name</th>
+      <th>Prim phys no</th>
+      <th>Health iss name</th>
+      <th>Health iss no</th>
+      <th>Health mem</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personal_ids.each do |personal_id| %>
+      <tr>
+        <td><%= personal_id.name %></td>
+        <td><%= personal_id.dob %></td>
+        <td><%= personal_id.language %></td>
+        <td><%= personal_id.phone_1 %></td>
+        <td><%= personal_id.phone_2 %></td>
+        <td><%= personal_id.email %></td>
+        <td><%= personal_id.emer_contact_name %></td>
+        <td><%= personal_id.emer_contact_no %></td>
+        <td><%= personal_id.prim_phys_name %></td>
+        <td><%= personal_id.prim_phys_no %></td>
+        <td><%= personal_id.health_iss_name %></td>
+        <td><%= personal_id.health_iss_no %></td>
+        <td><%= personal_id.health_mem_id %></td>
+        <td><%= link_to 'Show', personal_id %></td>
+        <td><%= link_to 'Edit', edit_personal_id_path(personal_id) %></td>
+        <td><%= link_to 'Destroy', personal_id, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal', new_personal_id_path %>
